@@ -1,0 +1,11 @@
+; Relevant keys in GTAIV/plugins/GTAIV.EFLC.FusionFix.cfg
+; (Fusion Fix writes this file itself; change these through the in-game menu)
+
+[MAIN]
+GraphicsAPI = 1          ; written automatically, because the wrapper's D9VK is DXVK (Vulkan) on MoltenVK; harmless
+Windowed = 0
+BorderlessWindowed = 1   ; REQUIRED: exclusive fullscreen mode changes deadlock Wine's macOS driver
+
+[FRAMELIMIT]
+DisplayFpsCounter = 1
+FpsLimitPreset = 2       ; 0 = off, 1 = custom, 2 = 30 fps

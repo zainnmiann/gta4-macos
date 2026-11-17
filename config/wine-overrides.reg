@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+; Load Fusion Fix's ASI loader (dinput8.dll) from the GTAIV folder, only for GTAIV.exe
+[HKEY_CURRENT_USER\Software\Wine\AppDefaults\GTAIV.exe\DllOverrides]
+"dinput8"="native,builtin"
+
+; Stop Wine from creating .lnk/.desktop shortcuts for installed Windows programs
+[HKEY_CURRENT_USER\Software\Wine\DllOverrides]
+"winemenubuilder.exe"=""
