@@ -14,7 +14,9 @@ including the Rockstar Games Launcher, **Fusion Fix** and **TJGM's Drag n' Drop 
 | Game | GTA IV: The Complete Edition (Steam), Rockstar Games Launcher, Fusion Fix 5.1.2 |
 | Result | Plays at ~27–30 fps on Low with a 30 fps cap, CPU around 60 °C |
 
-> No game files or mod files are included here. You need to own GTA IV on Steam. Mods are linked to their original sources.
+> You need to own GTA IV on Steam; no game files are included. The exact **Fusion Fix 5.1.2** release I used is mirrored
+> under [Releases](https://github.com/zainnmiann/gta4-macos/releases). The other mods are linked to their original
+> sources. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ---
 
@@ -103,6 +105,8 @@ A copy is in [`config/commandline.txt`](config/commandline.txt).
 ## 6. Fusion Fix and TJGM's Drag n' Drop Archive
 
 1. Download [TJGM's Drag n' Drop Archive](https://tjgm.dev/resources/gtaiv/TJGM%27s-Drag-n%27-Drop-Archive/). It includes [Fusion Fix](https://github.com/ThirteenAG/GTAIV.EFLC.FusionFix).
+   If you only want Fusion Fix, the exact version I tested is mirrored in this repo's
+   [Releases](https://github.com/zainnmiann/gta4-macos/releases/tag/fusionfix-5.1.2) (213 MB).
 2. Copy its contents into the `GTAIV` folder: `update/`, `plugins/`, `dinput8.dll`, `d3d9.dll` and `vulkan.dll`.
 3. Tell Wine to load the **ASI loader** (`dinput8.dll`) from the game folder. Either:
    - open the wrapper's **Winecfg** → **Applications** → add `GTAIV.exe` → **Libraries** → add `dinput8` → **native, builtin**, or
